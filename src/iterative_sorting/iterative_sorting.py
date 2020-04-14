@@ -34,25 +34,23 @@ print(arr)
         # TO-DO: swap
         #for current_index
    
-
-
-
-
 # TO-DO:  implement the Bubble Sort function below
 def bubble_sort( arr ):
-    num_a= arr[i]
-    num_b= ar[i + 1]
-    j = i
-    for j in range(1,2,(len (arr) - 1)):
-        if num_a > num_b:
-            #set num to the right(b) to num a (swap)
-            num_b[i] = num_a[i + 1]
-            
-            
+    for i in range(0, len(arr) - 1):
+        for j in range(i + 1, len(arr)):
+            if arr[i] > arr[j]:
+                #if i is > then j than swap
+                arr[i], arr[j] = arr[j],arr[i]
 
+
+
+
+    
+            
 
     return arr
-
+bubble_sort(arr)
+print(arr)
 
 
 # STRETCH: implement the Count Sort function below
